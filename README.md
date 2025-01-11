@@ -1,1 +1,1 @@
-Come here to meet Hack Club's very own <s>baby</s> Head Shark! Please stay for at least 12 seconds and keep your volume turned up to properly appreciate the Head Shark. Just click the "Meet the Head Shark" button to start!
+Come here to meet Hack Club's very own <s>baby</s> Head Shark! Please stay for at least 15 seconds and keep your volume turned up to properly appreciate the Head Shark. Just click the "Meet the Head Shark" button to start!
