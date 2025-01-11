@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baby Shork</title>
+        <link rel="icon" type="image/x-icon" href="">
+        <link rel="stylesheet" type="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button id="meet"> Meet the Head Shark! </button>
+        <div id="shorky" style="margin: 0; padding: 0; display: none; width: 100%;">
+            <img src="pink-head-shork.png" style="width: 37%;">
+            <img id="nametag" src="nametag.png" style="width: 8%;">
+        </div>
+        <audio id="babyshark" loop src="Baby Shark.mp3" style="position: absolute; bottom: 5%; left: 0;">
+            <source src="Baby Shark.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            document.getElementById("meet").addEventListener("click", ()=>{
+                document.getElementById("shorky").style.display = "inline-block";
+                document.getElementById("meet").style.display = "none";
+            })
+            document.getElementById("shorky").addEventListener("mouseover", ()=>{
+                document.getElementById("babyshark").play();
+                setTimeout(() => {
+                    document.getElementById("shorky").style.animation = "sharkyrotate 2s ease 0s infinite";
+                }, 11500);
+            })
+        </script>
+    </body>
+    <style>
+        body {
+            background-image: url(baby-shark-bg.jpg);
+            background-repeat: no-repeat;
+            background-color: #16bdea;
+            background-position: top;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #nametag {
+            position: absolute;
+            top: 57.5%;
+            left: 49.5%;
+        }
+
+        #nametag:hover {
+            transform: scale(1.5, 1.5);
+        }
+
+        @keyframes sharkyrotate {
+            0% {transform: rotate(0deg);}
+            25% {transform: rotate(15deg);}
+            50% {transform: rotate(0deg);}
+            75% {transform: rotate(-15deg);}
+            100% {transform: rotate(0deg);}
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            left: 42.5%;
+            padding: 1%;
+            border: 5px solid gold;
+            color: gold;
+            background-color: #16bdea;
+            font-weight: 900;
+            font-size: 20px;
+        }
+    </style>
+</html>
